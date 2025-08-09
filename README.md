@@ -1,4 +1,5 @@
 ﻿# CodeAlpha-Front-End-InternShip
 
-#1st Project#
+**1st Project**
 --> Image Gallery
+
