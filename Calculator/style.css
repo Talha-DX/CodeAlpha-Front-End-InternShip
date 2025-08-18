@@ -1,0 +1,82 @@
+    body 
+{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #222;
+        color: #fff;
+    }
+
+    .calculator 
+{
+        width: 320px;
+        background-color: #111;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+
+    .display 
+{
+        width: calc(100% - 20px);
+        height: 60px;
+        font-size: 2em;
+        text-align: right;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #555;
+        outline: none;
+        background: linear-gradient(to right, #111, #222);
+        color: #fff;
+        overflow: hidden;
+        transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .buttons 
+{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .button 
+{
+        padding: 20px;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(to right, #111, #222);
+        color: #fff;
+        outline: none;
+    }
+
+    .button:hover 
+   {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .button.operator
+   {
+        background: linear-gradient(to right, #FF7F50, #FF6347);
+    }
+
+    .button.equals {
+        background: linear-gradient(to right, #1E90FF, #4169E1);
+    }
+
+    .button.clear {
+        background: linear-gradient(to right, #FF6347, #FF4500);
+    }
+
+    .button:active {
+        transform: translateY(0);
+        box-shadow: none;
+    }
